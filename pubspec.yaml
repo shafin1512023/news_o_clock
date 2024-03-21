@@ -1,0 +1,39 @@
+name: news_o_clock
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+    sdk: ">=3.2.3 <4.0.0"
+
+dependencies:
+    flutter:
+        sdk: flutter
+    flutter_bloc: ^8.1.4
+    gap: ^3.0.1
+    hive: ^2.2.3
+    hive_flutter: ^1.1.0
+
+dev_dependencies:
+    flutter_test:
+        sdk: flutter
+    flutter_lints: ^2.0.0
+
+flutter:
+    uses-material-design: true
+
+    assets:
+        - assets/images/logo/
+    #   - images/a_dot_ham.jpeg
+
+    fonts:
+        - family: BalooBhai
+          fonts:
+              - asset: assets/fonts/BalooBhai2-Regular.ttf
+                weight: 400
+              - asset: assets/fonts/BalooBhai2-Medium.ttf
+                weight: 500
+              - asset: assets/fonts/BalooBhai2-SemiBold.ttf
+                weight: 600
+              - asset: assets/fonts/BalooBhai2-Bold.ttf
+                weight: 700
