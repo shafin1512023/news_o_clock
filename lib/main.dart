@@ -9,8 +9,10 @@ import 'package:news_o_clock/utils/themes/dark_theme.dart';
 import 'package:news_o_clock/utils/themes/light_theme.dart';
 
 void main() async {
+  /* ---------------- Hive Setup ---------------- */
   await Hive.initFlutter();
   await Hive.openBox(NConstants.keywords.databaseName);
+  /* -------------------------------------------- */
 
   runApp(
     MultiBlocProvider(

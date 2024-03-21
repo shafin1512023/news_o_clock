@@ -32,6 +32,6 @@ class _TextConstants {
 class _KeywordsConstants {
   final String databaseName = "database";
   final String nameKey = "news_o_clock_app_user_name";
-  final String themeKey = "news_o_clock_app_current_theme";
+  final String darkThemeKey = "news_o_clock_app_current_theme";
 }
 /* -------------------------------------------- */
