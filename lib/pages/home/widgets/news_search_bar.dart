@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_o_clock/utils/common/primary_color.dart';
 import 'package:news_o_clock/widgets/text_field/n_text_field.dart';
 
 /// A search bar for searching news
@@ -12,7 +13,7 @@ class NewsSearchBar extends StatelessWidget {
       placeholder: "Search news",
       icon: Icon(
         Icons.search_rounded,
-        color: Theme.of(context).colorScheme.primary,
+        color: primaryColor(context),
         size: 25,
       ),
     );

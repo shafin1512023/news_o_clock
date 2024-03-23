@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_o_clock/utils/common/primary_color.dart';
 import 'package:news_o_clock/utils/constants/n_constants.dart';
 
 /// A custom text field widget
@@ -34,7 +35,7 @@ class _NTextFieldState extends State<NTextField> {
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(100),
           borderSide: BorderSide(
-            color: Theme.of(context).colorScheme.primary,
+            color: primaryColor(context),
             width: 3,
           ),
         ),
@@ -43,7 +44,7 @@ class _NTextFieldState extends State<NTextField> {
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(100),
           borderSide: BorderSide(
-            color: Theme.of(context).colorScheme.primary,
+            color: primaryColor(context),
             width: 3,
           ),
         ),
@@ -53,7 +54,7 @@ class _NTextFieldState extends State<NTextField> {
         hintStyle: TextStyle(
           fontFamily: NConstants.text.fontName,
           fontSize: 16,
-          color: Theme.of(context).colorScheme.primary,
+          color: primaryColor(context),
         ),
 
         // Prefix Icon
@@ -68,7 +69,7 @@ class _NTextFieldState extends State<NTextField> {
       style: TextStyle(
         fontFamily: NConstants.text.fontName,
         fontSize: 16,
-        color: Theme.of(context).colorScheme.primary,
+        color: primaryColor(context),
       ),
     );
   }

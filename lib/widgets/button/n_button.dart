@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_o_clock/utils/common/primary_color.dart';
 import 'package:news_o_clock/widgets/text/n_text.dart';
 
 /// A custom button widget
@@ -29,7 +30,7 @@ class NButton extends StatelessWidget {
         height: size.height,
         alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primary,
+          color: primaryColor(context),
           borderRadius: BorderRadius.circular(5),
         ),
         child: NText(title, color: TextColor.secondary),

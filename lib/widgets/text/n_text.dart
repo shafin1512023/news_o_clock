@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:news_o_clock/utils/common/primary_color.dart';
+import 'package:news_o_clock/utils/common/secondary_color.dart';
 import 'package:news_o_clock/utils/constants/n_constants.dart';
 
 /// Defines all the possible colors for the app
@@ -43,10 +45,10 @@ class NText extends StatelessWidget {
 
     switch (color) {
       case TextColor.primary:
-        textColor = Theme.of(context).colorScheme.primary;
+        textColor = primaryColor(context);
         break;
       case TextColor.secondary:
-        textColor = Theme.of(context).colorScheme.secondary;
+        textColor = secondaryColor(context);
         break;
     }
 

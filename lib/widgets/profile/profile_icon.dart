@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_o_clock/utils/common/primary_color.dart';
 
 /// This class represents the profile icon in the home screen
 class ProfileIcon extends StatelessWidget {
@@ -20,7 +21,7 @@ class ProfileIcon extends StatelessWidget {
         width: radius * 2,
         height: radius * 2,
         decoration: BoxDecoration(
-          color: Theme.of(context).colorScheme.primary,
+          color: primaryColor(context),
           borderRadius: BorderRadius.circular(100),
         ),
       ),

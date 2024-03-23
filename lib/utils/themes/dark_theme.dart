@@ -8,4 +8,7 @@ ThemeData darkTheme = ThemeData(
     primary: NConstants.color.white,
     secondary: NConstants.color.black,
   ),
+  iconTheme: IconThemeData(
+    color: NConstants.color.white,
+  ),
 );

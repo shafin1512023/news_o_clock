@@ -8,4 +8,7 @@ ThemeData lightTheme = ThemeData(
     primary: NConstants.color.blue,
     secondary: NConstants.color.lightBlue,
   ),
+  iconTheme: IconThemeData(
+    color: NConstants.color.blue,
+  ),
 );
