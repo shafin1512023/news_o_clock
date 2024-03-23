@@ -15,7 +15,7 @@ class NameCubit extends Cubit<String> {
   /// Used to set the name of the user and
   /// store in the local database
   void setName(String name) {
-    database.put(NConstants.keywords.nameKey, name);
-    emit(name);
+    database.put(NConstants.keywords.nameKey, name.trim());
+    emit(name.trim());
   }
 }

@@ -15,6 +15,9 @@ class ThemeCubit extends Cubit<ThemeMode> {
               : ThemeMode.light,
         );
 
+  /// Checks if the current theme is dark or not in the local database
+  /// In the database this value is stored as boolean.
+  /// So, if it's dark then this function will return true else false.
   bool isDark() {
     return database.get(NConstants.keywords.darkThemeKey);
   }
