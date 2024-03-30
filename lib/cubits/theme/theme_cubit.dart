@@ -10,7 +10,7 @@ class ThemeCubit extends Cubit<ThemeMode> {
   /// Else light mode.
   ThemeCubit()
       : super(
-          database.get(NConstants.keywords.darkThemeKey)
+          database.get(NConstants.keywords.darkThemeKey) == true
               ? ThemeMode.dark
               : ThemeMode.light,
         );

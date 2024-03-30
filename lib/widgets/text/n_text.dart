@@ -29,6 +29,9 @@ class NText extends StatelessWidget {
   /// Aligns the text
   final TextAlign? textAlign;
 
+  /// Text height
+  final double? height;
+
   /// A custom text widget
   const NText(
     this.data, {
@@ -36,8 +39,36 @@ class NText extends StatelessWidget {
     this.fontSize,
     this.fontWeight,
     this.textAlign,
+    this.height,
     this.color = TextColor.primary,
   });
+
+  /// Customized for news title in news page
+  factory NText.newsTitle(String data) {
+    return NText(
+      data,
+      fontSize: 27,
+      fontWeight: FontWeight.bold,
+      height: 1.2,
+    );
+  }
+
+  /// Customized for news source and time in news page
+  factory NText.newsTimeAndSource(String data) {
+    return NText(
+      data,
+      fontSize: 15,
+    );
+  }
+
+  /// Customized for news description in news page
+  factory NText.content(String data) {
+    return NText(
+      data,
+      fontSize: 20,
+      height: 1.3,
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -56,6 +87,7 @@ class NText extends StatelessWidget {
       data,
       textAlign: textAlign,
       style: TextStyle(
+        height: height,
         color: textColor,
         fontSize: fontSize ?? NConstants.text.fontSize,
         fontFamily: NConstants.text.fontName,
